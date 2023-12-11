@@ -1,0 +1,97 @@
+let handler = async (m, { conn, usedPrefix, command }) => {
+    let thumb = 'https://telegra.ph/file/76ee3481c92b6e7132621.jpg'
+    await conn.sendFile(m.chat, thumb, 'galau.jpg', `${pickRandom(global.galau)}`, m)
+    conn.sendFile(m.chat, './mp3/sadboy.mp3', '', null, m, true, { type: "audioMessage", ptt: true, fileLength: 88738 })
+}
+handler.help = ['galau']
+handler.tags = ['quotes']
+handler.command = /^(galau)$/i
+
+module.exports = handler
+
+function pickRandom(list) {
+    return list[Math.floor(list.length * Math.random())]
+}
+
+global.galau = [
+    "Gak salah kalo aku lebih berharap sama orang yang lebih pasti tanpa khianati janji-janji  Radzz",
+    "Kalau aku memang tidak sayang sama kamu ngapain aku mikirin kamu. Tapi semuanya kamu yang ngganggap aku gak sayang sama kamu  Radzz",
+    "Jangan iri dan sedih jika kamu tidak memiliki kemampuan seperti yang orang miliki. Yakinlah orang lain juga tidak memiliki kemampuan sepertimu  Radzz",
+    "Hanya kamu yang bisa membuat langkahku terhenti, sambil berkata dalam hati mana bisa aku meninggalkanmu  Radzz",
+    "Tetap tersenyum walauku masih dibuat menunggu dan rindu olehmu, tapi itu demi kamu  Radzz",
+    "Tak semudah itu melupakanmu",
+    "Secuek-cueknya kamu ke aku, aku tetap sayang sama kamu karena kamu telah menerima aku apa adanya  Radzz",
+    "Aku sangat bahagia jika kamu bahagia didekatku, bukan didekatnya  Radzz",
+    "Jadilah diri sendiri, jangan mengikuti orang lain, tetapi tidak sanggup untuk menjalaninya  Radzz",
+    "Cobalah terdiam sejenak untuk memikirkan bagaimana caranya agar kita dapat menyelesaikan masalah ini bersama-sama  Radzz",
+    "Bisakah kita tidak bermusuhan setelah berpisah, aku mau kita seperti dulu sebelum kita jadian yang seru-seruan bareng, bercanda dan yang lainnya  Radzz",
+    "Aku ingin kamu bisa langgeng sama aku dan yang aku harapkan kamu bisa jadi jodohku  Radzz",
+    "Cinta tak bisa dijelaskan dengan kata-kata saja, karena cinta hanya mampu dirasakan oleh hati  Radzz",
+    "Masalah terbesar dalam diri seseorang adalah tak sanggup melawan rasa takutnya  Radzz",
+    "Selamat pagi buat orang yang aku sayang dan orang yang membenciku, semoga hari ini hari yang lebih baik daripada hari kemarin buat aku dan kamu  Radzz",
+    "Jangan menyerah dengan keadaanmu sekarang, optimis karena optimislah yang bikin kita kuat  Radzz",
+    "Kepada pria yang selalu ada di doaku aku mencintaimu dengan tulus apa adanya  Radzz",
+    "Tolong jangan pergi saat aku sudah sangat sayang padamu  Radzz",
+    "Coba kamu yang berada diposisiku, lalu kamu ditinggalin gitu aja sama orang yang lo sayang banget  Radzz",
+    "Aku takut kamu kenapa-napa, aku panik jika kamu sakit, itu karena aku cinta dan sayang padamu  Radzz",
+    "Sakit itu ketika cinta yang aku beri tidak kamu hargai  Radzz",
+    "Kamu tiba-tiba berubah tanpa sebab tapi jika memang ada sebabnya kamu berubah tolong katakan biar saya perbaiki kesalahan itu  Radzz",
+    "Karenamu aku jadi tau cinta yang sesungguhnya  Radzz",
+    "Senyum manismu sangatlah indah, jadi janganlah sampai kamu bersedih  Radzz",
+    "Berawal dari kenalan, bercanda bareng, ejek-ejekan kemudian berubah menjadi suka, nyaman dan akhirnya saling sayang dan mencintai  Radzz",
+    "Tersenyumlah pada orang yang telah menyakitimu agar sia tau arti kesabaran yang luar biasa  Radzz",
+    "Aku akan ingat kenangan pahit itu dan aku akan jadikan pelajaran untuk masa depan yang manis  Radzz",
+    "Kalau memang tak sanggup menepati janjimu itu setidaknya kamu ingat dan usahakan jagan membiarkan janjimu itu sampai kau lupa  Radzz",
+    "Hanya bisa diam dan berfikir Kenapa orang yang setia dan baik ditinggalin yang nakal dikejar-kejar giliran ditinggalin bilangnya laki-laki itu semuanya sama  Radzz",
+    "Walaupun hanya sesaat saja kau membahagiakanku tapi rasa bahagia yang dia tidak cepat dilupakan  Radzz",
+    "Aku tak menyangka kamu pergi dan melupakan ku begitu cepat  Radzz",
+    "Jomblo gak usah diam rumah mumpung malam minggu ya keluar jalan lah kan jomblo bebas bisa dekat sama siapapun pacar orang mantan sahabat bahkan sendiri atau bareng setan pun bisa  Radzz",
+    "Kamu adalah teman yang selalu di sampingku dalam keadaan senang maupun susah Terimakasih kamu selalu ada di sampingku  Radzz",
+    "Aku tak tahu sebenarnya di dalam hatimu itu ada aku atau dia  Radzz",
+    "Tak mudah melupakanmu karena aku sangat mencintaimu meskipun engkau telah menyakiti aku berkali-kali  Radzz",
+    "Hidup ini hanya sebentar jadi lepaskan saja mereka yang menyakitimu Sayangi Mereka yang peduli padamu dan perjuangan mereka yang berarti bagimu  Radzz",
+    "Tolong jangan pergi meninggalkanku aku masih sangat mencintai dan menyayangimu  Radzz",
+    "Saya mencintaimu dan menyayangimu jadi tolong jangan engkau pergi dan meninggalkan ku sendiri  Radzz",
+    "Saya sudah cukup tahu bagaimana sifatmu itu kamu hanya dapat memberikan harapan palsu kepadaku  Radzz",
+    "Aku berusaha mendapatkan cinta darimu tetapi Kamunya nggak peka  Radzz",
+    "Aku bangkit dari jatuh ku setelah kau jatuhkan aku dan aku akan memulainya lagi dari awal Tanpamu  Radzz",
+    "Mungkin sekarang jodohku masih jauh dan belum bisa aku dapat tapi aku yakin jodoh itu Takkan kemana-mana dan akan ku dapatkan  Radzz",
+    "Datang aja dulu baru menghina orang lain kalau memang dirimu dan lebih baik dari yang kau hina  Radzz",
+    "Membelakanginya mungkin lebih baik daripada melihatnya selingkuh didepan mata sendiri  Radzz",
+    "Bisakah hatimu seperti angsa yang hanya setia pada satu orang saja  Radzz",
+    "Aku berdiri disini sendiri menunggu kehadiran dirimu  Radzz",
+    "Aku hanya tersenyum padamu setelah kau menyakitiku agar kamu tahu arti kesabaran  Radzz",
+    "Maaf aku lupa ternyata aku bukan siapa-siapa  Radzz",
+    "Untuk memegang janjimu itu harus ada buktinya jangan sampai hanya janji palsu  Radzz",
+    "Aku tidak bisa selamanya menunggu dan kini aku menjadi ragu Apakah kamu masih mencintaiku  Radzz",
+    "Jangan buat aku terlalu berharap jika kamu tidak menginginkanku  Radzz",
+    "Lebih baik sendiri daripada berdua tapi tanpa kepastian  Radzz",
+    "Pergi bukan berarti berhenti mencintai tapi kecewa dan lelah karena harus berjuang sendiri  Radzz",
+    "Bukannya aku tidak ingin menjadi pacarmu Aku hanya ingin dipersatukan dengan cara yang benar  Radzz",
+    "Akan ada saatnya kok aku akan benar-benar lupa dan tidak memikirkan mu lagi  Radzz",
+    "Kenapa harus jatuh cinta kepada orang yang tak bisa dimiliki  Radzz",
+    "Jujur aku juga memiliki perasaan terhadapmu dan tidak bisa menolakmu tapi aku juga takut untuk mencintaimu  Radzz",
+    "Maafkan aku sayang tidak bisa menjadi seperti yang kamu mau  Radzz",
+    "Jangan memberi perhatian lebih seperti itu cukup biasa saja tanpa perlu menimbulkan rasa  Radzz",
+    "Aku bukan mencari yang sempurna tapi yang terbaik untukku  Radzz",
+    "Sendiri itu tenang tidak ada pertengkaran kebohongan dan banyak aturan  Radzz",
+    "Cewek strong itu adalah yang sabar dan tetap tersenyum meskipun dalam keadaan terluka  Radzz",
+    "Terima kasih karena kamu aku menjadi lupa tentang masa laluku  Radzz",
+    "Cerita cinta indah tanpa masalah itu hanya di dunia dongeng saja  Radzz",
+    "Kamu tidak akan menemukan apa-apa di masa lalu Yang ada hanyalah penyesalan dan sakit hati  Radzz",
+    "Mikirin orang yang gak pernah mikirin kita itu emang bikin gila  Radzz",
+    "Dari sekian lama menunggu apa yang sudah didapat  Radzz",
+    "Perasaan Bodo gue adalah bisa jatuh cinta sama orang yang sama meski udah disakiti berkali-kali  Radzz",
+    "Yang sendiri adalah yang bersabar menunggu pasangan sejatinya  Radzz",
+    "Aku terlahir sederhana dan ditinggal sudah biasa  Radzz",
+    "Aku sayang kamu tapi aku masih takut untuk mencintaimu  Radzz",
+    "Bisa berbagi suka dan duka bersamamu itu sudah membuatku bahagia  Radzz",
+    "Aku tidak pernah berpikir kamu akan menjadi yang sementara  Radzz",
+    "Jodoh itu bukan seberapa dekat kamu dengannya tapi seberapa yakin kamu dengan Allah  Radzz",
+    "Jangan paksa aku menjadi orang seperti seleramu  Radzz",
+    "Hanya yang sabar yang mampu melewati semua kekecewaan  Radzz",
+    "Balikan sama kamu itu sama saja bunuh diri dan melukai perasaan ku sendiri  Radzz",
+    "Tak perlu membalas dengan menyakiti biar Karma yang akan urus semua itu  Radzz",
+    "Aku masih ingat kamu tapi perasaanku sudah tidak sakit seperti dulu  Radzz",
+    "Punya kalimat sendiri & mau ditambahin? chat *.owner*"
+]
