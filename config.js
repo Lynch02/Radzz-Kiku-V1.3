@@ -27,7 +27,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 global.owner = [
   ['6281563245618'],
   ['6281563245618'],
-  ['6281563245618', 'Radzz', 'Radengg244@gmail.com', true]
+  ['6281563245618', 'Radzz', 'radengg244@gmail.com', true]
 ] // Put your number here
 global.mods = ['6281563245618'] // Moderator
 global.prems = ['6281563245618'] // Premium
