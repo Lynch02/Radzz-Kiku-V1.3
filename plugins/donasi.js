@@ -3,7 +3,7 @@ let moment = require('moment-timezone')
 let fetch = require('node-fetch')
 let fs = require('fs')
 
-let qris = ''
+let qris = 'https://telegra.ph/file/d2f71d364eb792e07320c.jpgs'
 let handler = async (m, { conn, args, usedPrefix, command }) => {
   conn.sendMessage(m.chat, {
     react: {
@@ -11,7 +11,7 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       key: m.key,
     }
   });
-const messa = await prepareWAMessageMedia({ image: await fetch('') }, { upload: conn.waUploadToServer })
+const messa = await prepareWAMessageMedia({ image: await fetch('https://telegra.ph/file/d2f71d364eb792e07320c.jpg') }, { upload: conn.waUploadToServer })
 const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productMessage": {
 "product": {
