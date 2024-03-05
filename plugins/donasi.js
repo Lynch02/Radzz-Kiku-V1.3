@@ -18,7 +18,7 @@ const catalog = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
 "productImage": messa.imageMessage, 
 "productId": "6188654807917484",
 "title": `𝙈𝙖𝙠𝙖𝙨𝙞𝙝 𝙮𝙖𝙣𝙜 𝙪𝙙𝙖𝙝 𝙙𝙤𝙣𝙖𝙨𝙞シ︎`,
-"description": `𝙎𝙘𝙖𝙣 𝙌𝙍 𝙙𝙞 𝙖𝙩𝙖𝙨 𝙪𝙣𝙩𝙪𝙠 𝙙𝙤𝙣𝙖𝙨𝙞`,
+"description": `Kirim Ke Nomor Tujuan Berikut\n* Dana: 0815-6324-5618\n* Shopeepay: 0815-6324-5618`,
 "currencyCode": "IDR",
 "bodyText": wm,
 "footerText": wm,
