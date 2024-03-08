@@ -27,7 +27,7 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 global.owner = [
   ['6281563245618'],
   ['6281563245618'],
-  ['6281563245618', 'Radzz', 'Radengg244@gmail.com', true]
+  ['6281563245618', 'Radzz', 'radengg244@gmail.com', true]
 ] // Put your number here
 global.mods = ['6281563245618'] // Moderator
 global.prems = ['6281563245618'] // Premium
@@ -70,10 +70,10 @@ const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
   var sticker_name = 'Radzz Bot'
-  var sticker_author = '0815-6324-5618'
+  var sticker_author = '0815-6324-56180'
 } else {
   var sticker_name = 'Radzz Bot'
-  var sticker_author = '0815-6324-5618'
+  var sticker_author = '0815-6324-56180'
 }
 
 const file_exif = "lib/exif.json"
