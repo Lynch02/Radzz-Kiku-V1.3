@@ -1,7 +1,7 @@
 let handler = async (m, { conn, text, usedPrefix: _p }) => {
   let user = global.db.data.users[m.sender]
   let message = `
-♧︎︎︎Pape Pape Brisik lu jawir ketik .menu aja buat liat fiturnya㋛︎ \n Minimal Donasi lah kalo ngerasa pake bot \n > Dana:v0815-6324-5618 \n > Shopeepay: 0815-6324-5618 \n Atau Ketik .donate😁 *@${m.sender.split("@")[0]}*`
+♧︎︎︎Pape Pape Brisik lu jawir ketik .menu aja buat liat fiturnya㋛︎ \n Minimal Donasi lah kalo ngerasa pake bot \n > Dana: 0815-6324-5618 \n > Shopeepay: 0815-6324-5618 \n Atau Ketik .donasi😁 *@${m.sender.split("@")[0]}*`
 conn.sendPresenceUpdate("composing", m.chat)
 conn.sendMessage(m.chat, {
 text: message,
